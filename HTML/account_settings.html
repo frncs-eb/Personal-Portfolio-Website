@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Account</title>
+    <link rel="stylesheet" href="../CSS/main_style.css">
+     <!--LOGOUT SCRIPT-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const logoutBtn = document.getElementById('logoutBtn');
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', function() {
+                    const confirmLogout = confirm("Are you sure you want to logout?");
+                    if (confirmLogout) {
+                        localStorage.removeItem('users'); 
+                        window.location.href = '../HTML/index.html';
+                    } else {
+                        alert("Logout cancelled.");
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+     <!--HEADER / NAVBAR-->
+    <header class="header">
+        <a href="#account" class="navbar-logo active">Account</a>
+        <nav class="navbar">
+            <a href="../HTML/home.html">Home</a>
+            <a href="../HTML/personal_info.html">Personal Information</a>
+            <a href="../HTML/projects.html">Projects</a>
+            <a href="../HTML/skills.html">Skills</a>
+            <a href="../HTML/achievements.html">Achievements</a>
+        </nav>
+    </header>
+     <!--ACCOUNT TAB-->
+    <div class="account-container">
+        <h2>Account Settings</h2>
+        <button id="logoutBtn" class="logout-button">Logout</button>
+
+    </div>
+
+</body>
+</html>

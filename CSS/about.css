@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #081b29;
+  min-height: 110vh;
+}
+ 
+/*HEADER/NAVBAR*/
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  min-height: 100vh;
+  background: #081b29;
+}
+.nav{
+ position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+  z-index: 100;
+}
+.nav-port p{
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+ 
+}
+.menu ul{
+  display: flex;
+ 
+}
+.menu ul li{
+  list-style-type: none;
+ 
+}
+.menu ul li .link{
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 15px;
+  margin: 0 25px;
+}
+.link:hover, .active{
+  border-bottom: 2px solid #fff;
+}
+.nav-btn .btn{
+  width: 130px;
+  height: 40px;
+  font-weight: 500;
+  background:rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .3s ease;
+ 
+}
+#registerBtn{
+  margin-left: 15px;
+}
+.btn.whiteBtn{
+  background: rgba(255, 255, 255, 0.7);
+ 
+}
+ 
+.btn.whiteBtn:hover{
+  background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn{
+  display: none;
+}
+.content {
+    color: #cacaca;
+    padding-top: 50px;
+}
+
+/*ABOUT US PAGE*/
+  .about {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    height: 80vh;
+    padding-top: 100px;
+  }
+    .about-grid {
+        display: flex;  
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .about-item {
+        background-color: #9a9c9e;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 8px;
+        height: 60vh;
+        width: 275px;
+        font-size: medium;
+        padding-top: 15px;    
+    }
+    .about-item img {
+      width: 60px;  
+      height: 10vh;
+      border-radius: 80%;
+      object-fit: cover;
+    }
+    .about-item p {
+      font-size: small;
+    }
+    .about-item h4 {
+      padding-top: 10px;
+    }
+    .about-item .p1 {
+      color: #000000;
+      font-size: small;
+      padding-top: 20px;  
+      text-align: left;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+  .icon a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      font-size: 20px;
+      color: #1b1d1d;
+      text-decoration: none;
+      padding-top: 80px;
+      }
+      .icon a:nth-child(1):hover {
+          color: #006AFF;
+      }
+      .icon a:nth-child(2):hover {
+          color: #E1306C;
+      }
+      .icon a:nth-child(3):hover {
+          color: #EA4335;
+      }
+      .icon a:hover {
+          transform: scale(1.1);
+      }

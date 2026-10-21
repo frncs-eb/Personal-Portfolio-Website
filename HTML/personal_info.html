@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="../CSS/main_style.css">
+    <script src="../JAVSCRIPT/personal_info.js" defer=""></script>
+</head>
+<body>
+    <!--HEADER / NAVBAR-->
+    <header class="header">
+        <a href="../HTML/account_settings.html" class="navbar-logo" class="logo">Account</a>
+        <nav class="navbar">
+            <a href="../HTML/home.html">Home</a>
+            <a href="#personal_info" class="active">Personal Information</a>
+            <a href="../HTML/projects.html">Projects</a>
+            <a href="../HTML/skills.html">Skills</a>
+            <a href="../HTML/achievements.html">Achievements</a>
+        </nav>
+    </header>
+    <!--PERSONAL INFORMATION TAB-->
+    <section id="personal_info" class="personal_info">
+        <h1>About Me!</h1>
+        <div class="personal_info-grid">
+            <div class="personal_info-content">
+                <img id="profileImage" src="../IMAGES/default.png" alt="Profile Image">
+                <button class="edit-btn image-edit-btn" id="uploadBtn"></button>
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+            <div class="personal_info-item">
+                <h3 id="aboutText" class="editable" contenteditable="true">Hello! I'm a creative professional with a passion for design and technology. With over 5 years of experience in the industry, I specialize in creating beautiful, functional digital experiences. When I'm not working, you can find me exploring nature or experimenting with new recipes in the kitchen.</h3>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
